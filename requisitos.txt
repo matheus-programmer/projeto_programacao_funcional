@@ -8,12 +8,10 @@
 **Projeto:** Sistema Gerenciador de Tarefas (To-Do List) em Python
 
 **Integrantes:**
-- **** - Matrícula: 
-- **** - Matrícula: 
-- **** - Matrícula: 
-- **** - Matrícula: 
-
-**Data:** 
+**Matheus Alves Medeiros – 2323804 **
+**Carlos Henrique Alves, 2323853**
+**Wiulis de Araujo Monteiro – 2326322**
+**Nicole Stefhany Monteiro Amed – 2326323**
 
 ---
 
@@ -21,10 +19,10 @@
 
 | Integrante              | Matrícula   | Papel no Projeto               |
 | ----------------------- | ----------- | ------------------------------ |
-|        |    | Analista de Requisitos         |
-|      |    | Desenvolvedor Principal (Backend) |
-|  |    | Desenvolvedora (Backend)       |
-|    |    | Engenheiro de Testes (QA)      |
+|    Matheus Alves Medeiros    |  2323804  | Analista de Requisitos         |
+|   Wiulis de Araujo Monteiro   |  2326322  | Desenvolvedor Principal (Backend) |
+| Nicole Stefhany Monteiro Amed|   2326323  | Desenvolvedora (Backend)       |
+|  Carlos Henrique Alves  |  2323853  | Engenheiro de Testes (QA)      |
 
 ---
 
