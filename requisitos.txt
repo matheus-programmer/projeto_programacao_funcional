@@ -1,0 +1,70 @@
+# Projeto To-Do List com Programação Funcional
+
+## 1. Capa
+
+**Instituição:** Universidade de Fortaleza (UNIFOR)
+**Curso:** Análise e Desenvolvimento de Sistemas
+**Disciplina:** Programação Funcional
+**Projeto:** Sistema Gerenciador de Tarefas (To-Do List) em Python
+
+**Integrantes:**
+- **** - Matrícula: 
+- **** - Matrícula: 
+- **** - Matrícula: 
+- **** - Matrícula: 
+
+**Data:** 
+
+---
+
+## 2. Papéis da Equipe
+
+| Integrante              | Matrícula   | Papel no Projeto               |
+| ----------------------- | ----------- | ------------------------------ |
+|        |    | Analista de Requisitos         |
+|      |    | Desenvolvedor Principal (Backend) |
+|  |    | Desenvolvedora (Backend)       |
+|    |    | Engenheiro de Testes (QA)      |
+
+---
+
+## 3. Requisitos do Sistema
+
+### 3.1. Requisitos Funcionais (RF)
+
+| ID    | Descrição                                                                          |
+| ----- | ------------------------------------------------------------------------------------ |
+| **RF01** | O sistema deve permitir ao usuário adicionar uma nova tarefa à lista.                |
+| **RF02** | O sistema deve permitir ao usuário listar todas as tarefas existentes.               |
+| **RF03** | O sistema deve permitir ao usuário marcar uma tarefa existente como "concluída".      |
+| **RF04** | O sistema deve permitir ao usuário excluir uma tarefa da lista.                      |
+| **RF05** | O sistema deve permitir filtrar e exibir apenas as tarefas pendentes ou concluídas. |
+
+### 3.2. Requisitos Não Funcionais (RNF)
+
+| ID    | Descrição                                                                                                    |
+| ----- | -------------------------------------------------------------------------------------------------------------- |
+| **RNF01** | O sistema deve ser desenvolvido na linguagem Python (versão 3.8 ou superior).                                  |
+| **RNF02** | O código-fonte deve ser claro, legível e bem comentado.                                                        |
+| **RNF03** | O sistema deve operar através de uma interface de linha de comando (CLI) simples.                              |
+| **RNF04** | A lógica do sistema deve aplicar conceitos de programação funcional, incluindo funções de alta ordem, closures, lambdas e list comprehensions. |
+| **RNF05** | O sistema deve ser acompanhado por um conjunto de testes automatizados para garantir seu correto funcionamento. |
+
+---
+
+## 4. Mapeamento de Requisitos e Conceitos Funcionais
+
+A tabela abaixo detalha como cada requisito funcional foi implementado no código e quais conceitos de programação funcional foram aplicados em cada função.
+
+| ID do Requisito | Função(ões) no Código                                | Conceito(s) de Programação Funcional Aplicado(s)                                                                                             |
+|:---------------:|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| **RF01** | `adicionar_tarefa(tarefas, descricao, gerador_id)`   | **Closure**: A função `gerador_de_id()` é uma closure que mantém o estado do `ultimo_id` entre as chamadas, garantindo IDs únicos.                  |
+| **RF02** | `formatar_tarefas_para_exibicao(tarefas)`            | **List Comprehension**: Utilizada para formatar a lista de tarefas de forma concisa e declarativa, transformando cada dicionário de tarefa em uma string legível. |
+| **RF03** | `atualizar_tarefa(tarefas, id_tarefa, atualizador)`  | **Função de Alta Ordem**: A função `atualizar_tarefa` recebe outra função (`atualizador`) como argumento para modificar o estado de uma tarefa. Para marcar como concluída, passamos uma função que altera o status. |
+| **RF04** | `excluir_tarefa(tarefas, id_tarefa)`                 | Nenhum conceito funcional específico, mas segue o princípio da imutabilidade ao retornar uma nova lista sem a tarefa removida.                |
+| **RF05** | `filtrar_tarefas(tarefas, criterio)`                 | **Função de Alta Ordem** e **Função Lambda**: `filtrar_tarefas` é uma função de alta ordem que recebe um `criterio` (uma função). No código principal, passamos funções `lambda` (ex: `lambda t: t['concluida']`) para definir os critérios de filtro de forma dinâmica e elegante. |
+
+---
+
+> **Nota de Rodapé:**
+> *Este projeto foi desenvolvido como parte de uma atividade acadêmica. Para a geração da estrutura inicial do código, documentação e casos de teste, foi utilizado o auxílio de um chatbot de IA (Gemini) como ferramenta de produtividade, seguido de revisão, refatoração e validação manual pela equipe.*
